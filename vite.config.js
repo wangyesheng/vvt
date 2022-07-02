@@ -1,9 +1,11 @@
 import { defineConfig } from "vite"
 import vue from "@vitejs/plugin-vue"
+import vueJsx from "@vitejs/plugin-vue-jsx"
 import { resolve } from "path"
 
 export default defineConfig({
-  plugins: [vue()],
+  base: "./",
+  plugins: [vue(), vueJsx()],
   resolve: {
     alias: {
       "@": resolve("src")
@@ -13,7 +15,7 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         // 全局引入样式文件
-        additionalData: '@import "@/styles/theme.scss";'
+        additionalData: '@import "@/assets/styles/theme.scss";'
       }
     }
   }

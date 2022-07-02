@@ -1,0 +1,13 @@
+.success {
+  color: #00ff00;
+}
+
+button {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.count-wrap {
+  border: 1px solid #8d1313;
+  padding: 10px;
+}

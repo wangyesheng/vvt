@@ -1,0 +1,13 @@
+.success {
+  color: #00ff00;
+  display: inline-block;
+  transform: rotate(60deg);
+}
+
+.iconBg {
+  background-image: url(../assets/imgs/icon.png);
+  background-size: 100% 100%;
+  width: 128px;
+  height: 128px;
+  transform: rotate(-30deg);
+}
